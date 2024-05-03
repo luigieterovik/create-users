@@ -42,7 +42,7 @@ function Users() {
         <InputLabel >Idade</InputLabel>
         <Input placeholder="Idade" ref={inputAge} />
 
-        <Button onClick={addNewUser}>Cadastrar <img alt="right-arrow" src={Right} /></Button>
+        <Button onClick={() => addNewUser}>Cadastrar <img alt="right-arrow" src={Right} /></Button>
       </ContainerItems>
     </Container>
   );
