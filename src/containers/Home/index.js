@@ -18,7 +18,7 @@ function Users() {
   const history = useHistory()
 
   async function addNewUser() {
-    const { data: newUser } = await axios.post("https://create-users-backend-production.up.railway.app/users", {
+    const { data: newUser } = await axios.post("create-users-backend-production.up.railway.app/users", {
       name: inputName.current.value,
       age: inputAge.current.value,
     })
