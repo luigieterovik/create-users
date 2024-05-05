@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     async function fetchUsers() {
-      const { data: newUsers } = await axios.get("https://create-users-backend-production.up.railway.app/users")
+      const { data: newUsers } = await axios.get("create-users-backend-production.up.railway.app/users")
       
       setUsers(newUsers)
     }
@@ -28,7 +28,7 @@ function App() {
   }, [])
 
   async function deleteUser(userId) {
-    await axios.delete(`https://create-users-backend-production.up.railway.app/users/${userId}`)
+    await axios.delete(`create-users-backend-production.up.railway.app/users/${userId}`)
     const newUsers = users.filter(user => user.id !== userId)
     setUsers(newUsers)
   }
