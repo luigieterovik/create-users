@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Create Users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A interface **Create Users** é uma aplicação **front-end** desenvolvida em **React**. Sua funcionalidade principal é permitir que os usuários realizem o cadastro de novos usuários de forma gráfica e visualizem todos os usuários cadastrados. 
 
-## Available Scripts
+A interface se comunica com uma [API](https://github.com/luigieterovik/create-users-backend) para realizar operações de cadastro e visualização de dados.
 
-In the project directory, you can run:
+<img src="https://i.imgur.com/QhJEgBd.png">
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Cadastro de Usuários**: O usuário pode preencher um formulário gráfico para adicionar novos usuários.
+- **Visualização de Usuários**: Uma lista gráfica exibe todos os usuários cadastrados no sistema, consumindo os dados da API.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **React**: Biblioteca JavaScript para construção de interfaces.
+- **Axios**: Para consumo da [API](https://github.com/luigieterovik/create-users-backend).
+- **Styled-Components**: Estilização da interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Executar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
+- Node.js instalado na máquina.
+- Gerenciador de pacotes (npm ou yarn).
 
-### `npm run eject`
+### Passos
+1. Clone o repositório do projeto:
+   ```
+   git clone <link-do-repositorio>
+   ```
+3. Instale as dependências:
+   ```
+   npm install
+   ```
+   # ou
+   ```
+   yarn install
+   ```
+5. Inicie o servidor de desenvolvimento:
+   ```
+   npm start
+   ```
+   # ou
+   ```
+   yarn start
+   ```
+7. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuração da API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A interface consome os dados da [API](https://github.com/luigieterovik/create-users-backend). Certifique-se de que a API esteja em execução antes de iniciar o frontend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuição
 
-## Learn More
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Faça um fork do projeto.
+2. Crie uma branch para sua funcionalidade:
+   git checkout -b minha-nova-funcionalidade
+3. Commit suas alterações:
+   git commit -m 'Adiciona nova funcionalidade'
+4. Faça o push para a branch:
+   git push origin minha-nova-funcionalidade
+5. Abra um Pull Request.
